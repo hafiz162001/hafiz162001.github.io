@@ -3,20 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hafiz Ahmad Ramdani - Portfolio</title>
+  <title>Hafiz Ahmad Ramdani - Fun Portfolio</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f2f2f2;
+      background: #ffe8ec;
       color: #333;
     }
     header {
-      background: #0077ff;
+      background: #ff9aa2;
       color: white;
-      padding: 20px;
+      padding: 30px;
       text-align: center;
+      position: relative;
+    }
+    header img.character {
+      width: 80px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      animation: floaty 3s ease-in-out infinite;
+    }
+    @keyframes floaty {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
     section {
       padding: 40px;
@@ -27,29 +39,32 @@
       background: white;
       padding: 20px;
       margin-top: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      border-radius: 10px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
     footer {
       text-align: center;
-      padding: 10px;
-      background: #0077ff;
+      padding: 15px;
+      background: #ff9aa2;
       color: white;
       margin-top: 40px;
+      font-size: 14px;
     }
     .btn {
       display: inline-block;
       padding: 10px 20px;
-      background: #0077ff;
+      background: #ffb7b2;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 10px;
       margin-top: 10px;
     }
-    img {
-      width: 150px;
+    img.profile {
+      width: 130px;
       border-radius: 50%;
-      margin-top: 10px;
+      margin-top: 20px;
+      border: 4px solid white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
   </style>
 </head>
@@ -57,22 +72,23 @@
 
 <header>
   <h1>Hafiz Ahmad Ramdani</h1>
-  <p>Junior Developer | Tech Enthusiast</p>
-  <img src="https://avatars.githubusercontent.com/u/your_user_id?v=4" alt="Profile Picture">
+  <p>Junior Developer | Fun Creator</p>
+  <img src="https://avatars.githubusercontent.com/u/your_user_id?v=4" alt="Profile Picture" class="profile">
+  <img src="https://cdn-icons-png.flaticon.com/512/742/742751.png" class="character" alt="Cute Character">
 </header>
 
 <section>
   <div class="card">
     <h2>About Me</h2>
-    <p>Hello! I'm Hafiz, a passionate junior developer who loves building websites and exploring new technologies.</p>
+    <p>Hi there! I'm Hafiz, a developer who loves coding and bringing a bit of fun into everything!</p>
   </div>
 
   <div class="card">
     <h2>Projects</h2>
     <ul>
-      <li>Landing Page Website</li>
-      <li>Simple Todo App</li>
-      <li>Personal Blog</li>
+      <li>Happy Landing Page</li>
+      <li>Fun Todo List App</li>
+      <li>Animated Blog</li>
     </ul>
     <a href="https://github.com/hafiz162001" class="btn">View My GitHub</a>
   </div>
@@ -80,12 +96,12 @@
   <div class="card">
     <h2>Contact</h2>
     <p>Email: hafiz@example.com</p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/hafiz</a></p>
+    <p>Instagram: <a href="#">@hafizfun</a></p>
   </div>
 </section>
 
 <footer>
-  &copy; 2025 Hafiz Ahmad Ramdani
+  Made with love and smiles by Hafiz.
 </footer>
 
 </body>
